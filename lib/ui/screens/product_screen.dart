@@ -20,13 +20,12 @@ class _ProductsScreenState extends State<ProductsScreen> {
         title: Text('Product App'),
       ),
       floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.lightBlueAccent,
+          backgroundColor: blue,
           child: Icon(Icons.add),
           onPressed: () {
             Navigator.pushNamed(context, AddProduct.id);
           }),
       body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 20.0),
         decoration: BoxDecoration(
             color: kactiveCardColor,
             borderRadius: BorderRadius.all(Radius.circular(20.0))),

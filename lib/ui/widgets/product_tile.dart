@@ -65,18 +65,49 @@ class _ProductTileState extends State<ProductTile> {
               alignment: Alignment.center,
             ),
           ),
-          child: Container(
-            alignment: Alignment.bottomLeft,
-            margin: EdgeInsets.only(left: 20),
-            padding: EdgeInsets.all(10),
-            child: Text(
-              '${widget.product.title}',
-              style: TextStyle(
-                  backgroundColor: Colors.black54.withOpacity(0.2),
-                  color: Colors.white,
-                  fontSize: 19,
-                  fontWeight: FontWeight.bold),
-            ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Container(
+                alignment: Alignment.bottomLeft,
+                margin: EdgeInsets.only(left: 20),
+                padding: EdgeInsets.all(10),
+                child: Text(
+                  '${widget.product.title}',
+                  style: TextStyle(
+                      backgroundColor: Colors.black54.withOpacity(0.2),
+                      color: Colors.white,
+                      fontSize: 19,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
+              // Container(
+              //   alignment: Alignment.bottomLeft,
+              //   margin: EdgeInsets.only(left: 20),
+              //   padding: EdgeInsets.all(10),
+              //   child: Text(
+              //     '\$+${widget.product.price}',
+              //     style: TextStyle(
+              //         backgroundColor: Colors.black54.withOpacity(0.2),
+              //         color: Colors.grey[350],
+              //         fontSize: 19,
+              //         fontWeight: FontWeight.bold),
+              //   ),
+              // ),
+              // Container(
+              //   alignment: Alignment.bottomLeft,
+              //   margin: EdgeInsets.only(left: 20),
+              //   padding: EdgeInsets.all(10),
+              //   child: Text(
+              //     '\$+${widget.product.rate}',
+              //     style: TextStyle(
+              //         backgroundColor: Colors.black54.withOpacity(0.2),
+              //         color: Colors.grey[350],
+              //         fontSize: 19,
+              //         fontWeight: FontWeight.bold),
+              //   ),
+              // ),
+            ],
           ),
         ),
         shape: RoundedRectangleBorder(
